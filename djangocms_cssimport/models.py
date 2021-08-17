@@ -23,7 +23,7 @@ class CSSImportSpec(CMSPlugin):
         blank=False,
         default='',
         max_length=1024,
-        help_text=_('Select one of the statics files available folder or repository.')
+        help_text=_('Select a static files repository.')
     )
 
     css_file_path = models.CharField(
@@ -33,7 +33,7 @@ class CSSImportSpec(CMSPlugin):
         default='',
         null=True,
         max_length=2048,
-        help_text=_('File name an location inside static folder.')
+        help_text=_('Select a CSS file.')
     )
 
     def __str__(self):
