@@ -6,7 +6,7 @@ REQUIREMENTS = [
 
 setuptools.setup(
     name="djangocms_cssimport",
-    version="1.0.3",
+    version="1.0.4",
     author="Pablo Pinargote",
     author_email="pablo.pinargote@outlook.com",
     description="Plugin for django CMS that allows you to add internal CSS files on demand.",
