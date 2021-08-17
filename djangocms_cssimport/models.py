@@ -26,8 +26,8 @@ class CSSImportSpec(CMSPlugin):
         help_text=_('Select one of the statics files available folder or repository.')
     )
 
-    css_file = models.CharField(
-        verbose_name=_('CSS File'),
+    css_file_path = models.CharField(
+        verbose_name=_('CSS File Path'),
         choices=FILE_CHOICES,
         blank=False,
         default='',
