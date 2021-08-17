@@ -6,7 +6,7 @@ from djangocms_cssimport.models import CSSImportSpec
 
 
 @plugin_pool.register_plugin
-class SVGImagePlugin(CMSPluginBase):
+class CSSImportPlugin(CMSPluginBase):
     model = CSSImportSpec
     name = _('CSS Import')
     cache = False
