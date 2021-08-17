@@ -6,10 +6,10 @@ REQUIREMENTS = [
 
 setuptools.setup(
     name="djangocms_cssimport",
-    version="1.0.2",
+    version="1.0.3",
     author="Pablo Pinargote",
     author_email="pablo.pinargote@outlook.com",
-    description="Plugin for django CMS that allows you to add SVG images on your site.",
+    description="Plugin for django CMS that allows you to add internal CSS files on demand.",
     url='https://github.com/pablo-pinargote/django_cssimport',
     packages=setuptools.find_packages(),
     classifiers=[
