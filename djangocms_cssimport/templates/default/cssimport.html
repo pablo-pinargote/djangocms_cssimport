@@ -1,0 +1,1 @@
+{% load cms_tags sekizai_tags %}{% addtoblock "css" %}<link rel="stylesheet" href="{{ STATIC_URL }}{{ instance.css_file_path }}?v={% now 'U' %}">{% endaddtoblock %}

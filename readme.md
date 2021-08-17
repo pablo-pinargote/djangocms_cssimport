@@ -1,0 +1,2 @@
+# djangocms CSS Import plugin
+
