@@ -11,7 +11,7 @@ class CSSImportSpec(CMSPlugin):
         help_text=_('Overrides the display name in the structure mode.'),
     )
     css_file_path = models.CharField(
-        verbose_name=_('Alternative Text'),
+        verbose_name=_('CSS File Path'),
         blank=True,
         null=True,
         max_length=2048,
