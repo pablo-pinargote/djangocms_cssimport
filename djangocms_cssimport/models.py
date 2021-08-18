@@ -44,7 +44,6 @@ class CSSImportSpec(CMSPlugin):
 
     def get_file_choices_from_local_folder(self):
         file_choices = []
-
         for i, repo in enumerate(settings.STATICFILES_DIRS):
             for r, d, f in os.walk(repo):
                 for file in f:
@@ -58,7 +57,6 @@ class CSSImportSpec(CMSPlugin):
 
     def get_file_choices_from_google_storage(self):
         file_choices = []
-
         for i, repo in enumerate(settings.STATICFILES_DIRS):
             for prefix in os.listdir(repo):
                 storage_client = storage.Client()
