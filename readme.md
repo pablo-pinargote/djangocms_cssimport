@@ -32,7 +32,7 @@ python manage.py migrate djangocms_cssimport
 
 ## Using the plugin
 
-Using the plugin is very straightforward, we just select it from the plugin's list, select the static folder and the file we need to inject.
+Using the plugin is very straightforward, we just select it from the plugin's list, and select the file we need to inject.
 
 ## Google cloud storage
 
