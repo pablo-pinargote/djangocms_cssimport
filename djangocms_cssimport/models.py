@@ -18,12 +18,14 @@ class CSSImportSpec(CMSPlugin):
         help_text=_('Select a CSS file.')
     )
 
-    def __str__(self):
+    def __init__(self, *args, **kwargs):
+        super(CSSImportSpec, self).__init__(*args, **kwargs)
         self._meta.get_field('css_file_path').choices = lazy(self.get_file_choices, list)()
+
+    def __str__(self):
         return self.css_file_path.split('/')[len(self.css_file_path.split('/')) - 1] or str(self.pk)
 
     def get_file_choices(self):
-
         if getattr(settings, 'GS_STATIC_BUCKET_NAME', None) is not None:
             return self.get_file_choices_from_google_storage()
         return self.get_file_choices_from_local_folder()
