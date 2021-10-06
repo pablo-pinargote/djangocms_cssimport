@@ -2,12 +2,12 @@ import setuptools
 
 REQUIREMENTS = [
     'django-cms>=3.7',
-    'google-cloud-storage==1.32.0',
+    'google-cloud-storage>=1.32.0',
 ]
 
 setuptools.setup(
     name="djangocms_cssimport",
-    version="1.0.9",
+    version="1.0.10",
     author="Pablo Pinargote",
     author_email="pablo.pinargote@outlook.com",
     description="Plugin for django CMS that allows you to add internal CSS files on demand.",
